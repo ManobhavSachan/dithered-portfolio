@@ -1,4 +1,4 @@
-import DitheredLogo from "./components/DitheredLogo";
+import ThemedDitheredLogo from "./components/ThemedDitheredLogo";
 import BottomTab from "./components/BottomTab";
 
 export default function Home() {
@@ -20,27 +20,7 @@ export default function Home() {
                 />
               </div>
             </div>
-            <DitheredLogo
-              image="/dino.webp"
-              algorithm="floyd-steinberg"
-              invert={true}
-              scale={1}
-              dotScale={1.5}
-              backgroundColor="transparent"
-              imageProcessing={{
-                threshold: 181,
-                contrast: 0,
-                gamma: 1.03,
-                blur: 3.75,
-                highlightsCompression: 0,
-              }}
-              interaction={{
-                mouseRepulsion: true,
-                clickShockwave: true,
-              }}
-              gridResolution={150}
-              className="h-[240px] w-[240px] rounded-2xl z-10"
-            />
+            <ThemedDitheredLogo />
           </div>
 
           <div className="space-y-5">
@@ -73,34 +53,104 @@ export default function Home() {
           </p>
         </section>
 
-        <section id="work" className="grid gap-10 md:grid-cols-2">
-          <article>
-            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-zinc-500 dark:text-zinc-400">
-              Current Role
-            </p>
-            <h3 className="mt-2 text-xl font-semibold text-zinc-950 dark:text-zinc-50">
-              Amazon · Alexa
-            </h3>
-            <p className="mt-3 text-sm leading-relaxed text-zinc-700 dark:text-zinc-300">
-              Building scalable backend systems and human-first voice
-              experiences. Focused on reliability under massive load,
-              observability, and product quality that survives real world chaos.
-            </p>
-          </article>
+        <section id="work" className="py-2">
+          <h2 className="text-2xl font-semibold tracking-tight text-zinc-950 dark:text-zinc-50">
+            Experience
+          </h2>
+          <div className="mt-6 space-y-5">
+            <article className="rounded-2xl border border-zinc-900/10 bg-white/70 p-5 dark:border-zinc-700 dark:bg-zinc-900/40">
+              <div className="flex flex-wrap items-center justify-between gap-2">
+                <h3 className="text-lg font-semibold text-zinc-950 dark:text-zinc-50">
+                  Software Dev Engineer · Amazon
+                </h3>
+                <p className="text-sm text-zinc-600 dark:text-zinc-400">
+                  Jul 2025 - Present · Hyderabad, India
+                </p>
+              </div>
+              <p className="mt-3 text-sm leading-relaxed text-zinc-700 dark:text-zinc-300">
+                Building large-scale backend systems and reliability-focused
+                services for Alexa. Working on high-traffic infrastructure,
+                observability, and performance.
+              </p>
+            </article>
 
-          <article>
-            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-zinc-500 dark:text-zinc-400">
-              What I Ship
-            </p>
-            <h3 className="mt-2 text-xl font-semibold text-zinc-950 dark:text-zinc-50">
-              End to End Experiences
-            </h3>
-            <p className="mt-3 text-sm leading-relaxed text-zinc-700 dark:text-zinc-300">
-              From APIs and event pipelines to polished UI workflows. I like
-              systems that are fast, maintainable, and understandable by
-              teammates who still want to be friends after code review.
-            </p>
-          </article>
+            <article className="rounded-2xl border border-zinc-900/10 bg-white/70 p-5 dark:border-zinc-700 dark:bg-zinc-900/40">
+              <div className="flex flex-wrap items-center justify-between gap-2">
+                <h3 className="text-lg font-semibold text-zinc-950 dark:text-zinc-50">
+                  Software Developer · Oncourse AI
+                </h3>
+                <p className="text-sm text-zinc-600 dark:text-zinc-400">
+                  Apr 2024 - Jul 2025 · Bengaluru / Remote
+                </p>
+              </div>
+              <p className="mt-3 text-sm leading-relaxed text-zinc-700 dark:text-zinc-300">
+                Progressed from intern to full-time developer. Shipped product
+                features using Next.js and TypeScript and contributed across
+                frontend and backend workflows.
+              </p>
+            </article>
+
+            <article className="rounded-2xl border border-zinc-900/10 bg-white/70 p-5 dark:border-zinc-700 dark:bg-zinc-900/40">
+              <div className="flex flex-wrap items-center justify-between gap-2">
+                <h3 className="text-lg font-semibold text-zinc-950 dark:text-zinc-50">
+                  Software Developer Intern · PyCray
+                </h3>
+                <p className="text-sm text-zinc-600 dark:text-zinc-400">
+                  Jun 2023 - Aug 2023 · Noida / Remote
+                </p>
+              </div>
+              <p className="mt-3 text-sm leading-relaxed text-zinc-700 dark:text-zinc-300">
+                Built and improved product modules with React Native and React,
+                with a focus on practical user-facing features and clean
+                component architecture.
+              </p>
+            </article>
+
+            <article className="rounded-2xl border border-zinc-900/10 bg-white/70 p-5 dark:border-zinc-700 dark:bg-zinc-900/40">
+              <div className="flex flex-wrap items-center justify-between gap-2">
+                <h3 className="text-lg font-semibold text-zinc-950 dark:text-zinc-50">
+                  Research Intern (SERB) · NIT Goa
+                </h3>
+                <p className="text-sm text-zinc-600 dark:text-zinc-400">
+                  Jun 2023 - Jul 2023 · Goa
+                </p>
+              </div>
+              <p className="mt-3 text-sm leading-relaxed text-zinc-700 dark:text-zinc-300">
+                Conducted research-driven development with Python and gprMax,
+                working on simulations and experimentation in an academic
+                setting.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section id="projects" className="py-2">
+          <h2 className="text-2xl font-semibold tracking-tight text-zinc-950 dark:text-zinc-50">
+            Projects
+          </h2>
+          <div className="mt-6 grid gap-5 md:grid-cols-2">
+            <article className="rounded-2xl border border-zinc-900/10 bg-white/70 p-5 dark:border-zinc-700 dark:bg-zinc-900/40">
+              <h3 className="text-lg font-semibold text-zinc-950 dark:text-zinc-50">
+                Rejectedly-Yours
+              </h3>
+              <p className="mt-3 text-sm leading-relaxed text-zinc-700 dark:text-zinc-300">
+                AI-assisted job tracker that integrates with Gmail to parse
+                application updates and classify responses. Built with Python
+                for backend processing and Next.js for the interface.
+              </p>
+            </article>
+
+            <article className="rounded-2xl border border-zinc-900/10 bg-white/70 p-5 dark:border-zinc-700 dark:bg-zinc-900/40">
+              <h3 className="text-lg font-semibold text-zinc-950 dark:text-zinc-50">
+                Schemer
+              </h3>
+              <p className="mt-3 text-sm leading-relaxed text-zinc-700 dark:text-zinc-300">
+                Interactive schema design platform using Next.js and React Flow
+                to visualize tables, relationships, and constraints, with LLM-
+                assisted workflows for faster database modeling.
+              </p>
+            </article>
+          </div>
         </section>
 
         <section id="skills" className="py-2">
@@ -133,9 +183,8 @@ export default function Home() {
             Contact
           </h2>
           <p className="mt-3 max-w-2xl text-pretty text-lg leading-relaxed text-zinc-700 dark:text-zinc-300">
-            Resume details and project history can be slotted in next. For now,
-            this page is wired for your voice, your brand, and your dithered
-            hero section.
+            Open to impactful backend and full-stack opportunities where I can
+            build reliable systems, ship fast, and solve hard product problems.
           </p>
           <div className="mt-5 flex flex-wrap gap-3">
             <a
