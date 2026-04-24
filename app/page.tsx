@@ -64,7 +64,7 @@ export default function Home() {
                   Software Dev Engineer · Amazon
                 </h3>
                 <p className="text-sm text-zinc-600 dark:text-zinc-400">
-                  Jul '25 - Present
+                  Jul &apos;25 - Present
                 </p>
               </div>
               <p className="mt-3 text-sm leading-relaxed text-zinc-700 dark:text-zinc-300">
@@ -81,7 +81,7 @@ export default function Home() {
                   Software Developer · Oncourse AI
                 </h3>
                 <p className="text-sm text-zinc-600 dark:text-zinc-400">
-                  Apr '24 - Jul '25
+                  Apr &apos;24 - Jul &apos;25
                 </p>
               </div>
               <p className="mt-3 text-sm leading-relaxed text-zinc-700 dark:text-zinc-300">
@@ -100,7 +100,7 @@ export default function Home() {
                   Software Developer Intern · PyCray
                 </h3>
                 <p className="text-sm text-zinc-600 dark:text-zinc-400">
-                  Jun '23 - Aug '23
+                  Jun &apos;23 - Aug &apos;23
                 </p>
               </div>
               <p className="mt-3 text-sm leading-relaxed text-zinc-700 dark:text-zinc-300">
@@ -114,7 +114,7 @@ export default function Home() {
                   Research Intern · SERB
                 </h3>
                 <p className="text-sm text-zinc-600 dark:text-zinc-400">
-                  Jun '23 - Jul '23
+                  Jun &apos;23 - Jul &apos;23
                 </p>
               </div>
               <p className="mt-3 text-sm leading-relaxed text-zinc-700 dark:text-zinc-300">
@@ -164,7 +164,7 @@ export default function Home() {
                   National Institute of Technology Goa
                 </h3>
                 <p className="text-sm text-zinc-600 dark:text-zinc-400">
-                  Jul '20 - May '24
+                  Jul &apos;20 - May &apos;24
                 </p>
               </div>
               <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">
@@ -178,7 +178,7 @@ export default function Home() {
                   Kendriya Vidyalaya, Vayu Sena Nagar, Nagpur
                 </h3>
                 <p className="text-sm text-zinc-600 dark:text-zinc-400">
-                  Apr '19 - Mar '20
+                  Apr &apos;19 - Mar &apos;20
                 </p>
               </div>
               <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">
@@ -199,7 +199,7 @@ export default function Home() {
                   GSoC Contributor · gprMax
                 </h3>
                 <p className="text-sm text-zinc-600 dark:text-zinc-400">
-                  Sep '25
+                  Sep &apos;25
                 </p>
               </div>
               <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">
@@ -219,7 +219,7 @@ export default function Home() {
                   Winner · Smart India Hackathon
                 </h3>
                 <p className="text-sm text-zinc-600 dark:text-zinc-400">
-                  Dec '23
+                  Dec &apos;23
                 </p>
               </div>
               <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">

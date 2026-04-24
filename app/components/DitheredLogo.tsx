@@ -922,6 +922,32 @@ export default function DitheredLogo({
     };
   }, [image, startLoop, rebuildParticles]);
 
+  useEffect(() => {
+    if (!mergedInteraction.clickShockwave) return;
+    const triggerIntroClick = () => {
+      const canvas = canvasRef.current;
+      if (!canvas) return;
+
+      const rect = canvas.getBoundingClientRect();
+      if (rect.width === 0 || rect.height === 0) return;
+
+      canvas.dispatchEvent(
+        new PointerEvent('pointerup', {
+          bubbles: true,
+          cancelable: true,
+          pointerId: 1,
+          pointerType: 'mouse',
+          clientX: rect.left + rect.width / 2,
+          clientY: rect.top + rect.height / 2,
+        })
+      );
+    };
+
+    const timer = window.setInterval(triggerIntroClick, 5000);
+
+    return () => window.clearInterval(timer);
+  }, [mergedInteraction.clickShockwave]);
+
   return (
     <div className={className} style={{ ...style, overflow: 'hidden' }}>
       <canvas
