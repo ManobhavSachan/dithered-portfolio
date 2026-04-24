@@ -75,7 +75,7 @@ const SECTION_IDS = ['home', 'about', 'work', 'skills', 'contact'];
 const SOCIAL_ITEMS: Array<{ name: string; href: string; icon: ReactNode }> = [
   {
     name: 'Email',
-    href: 'mailto:hello@example.com',
+    href: 'mailto:manobhavsachan@gmail.com',
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="size-full rounded-sm overflow-hidden object-contain">
         <rect x="3" y="5" width="18" height="14" rx="2" />
@@ -85,7 +85,7 @@ const SOCIAL_ITEMS: Array<{ name: string; href: string; icon: ReactNode }> = [
   },
   {
     name: 'LinkedIn',
-    href: 'https://linkedin.com',
+    href: 'https://linkedin.com/in/manobhav-sachan',
     icon: (
       <svg viewBox="0 0 24 24" fill="currentColor" className="size-full rounded-sm overflow-hidden object-contain">
         <path d="M6.5 8.5h-3V20h3V8.5ZM5 7.2a1.8 1.8 0 1 0 0-3.6 1.8 1.8 0 0 0 0 3.6ZM20.5 13.5c0-3.2-1.7-5.2-4.6-5.2-2.1 0-3 .9-3.5 1.6v-1.4h-3V20h3v-6.2c0-1.7.3-3.3 2.4-3.3s2.1 2 2.1 3.4V20h3v-6.5Z" />
@@ -94,7 +94,7 @@ const SOCIAL_ITEMS: Array<{ name: string; href: string; icon: ReactNode }> = [
   },
   {
     name: 'GitHub',
-    href: 'https://github.com',
+    href: 'https://github.com/ManobhavSachan',
     icon: (
       <svg viewBox="0 0 24 24" fill="currentColor" className="size-full rounded-sm overflow-hidden object-contain">
         <path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5V19c-2.8.6-3.4-1.2-3.4-1.2-.4-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.6 1 1.6 1 .9 1.5 2.3 1.1 2.9.9.1-.7.4-1.1.7-1.4-2.2-.2-4.5-1.1-4.5-5A3.9 3.9 0 0 1 7.6 8c-.1-.2-.4-1.3.1-2.7 0 0 .9-.3 2.9 1a10 10 0 0 1 5.2 0c2-1.3 2.9-1 2.9-1 .5 1.4.2 2.5.1 2.7A3.9 3.9 0 0 1 19.4 11c0 3.9-2.3 4.8-4.5 5 .4.3.8 1 .8 2v3c0 .3.2.6.7.5A10 10 0 0 0 12 2Z" />

@@ -57,68 +57,68 @@ export default function Home() {
           <h2 className="text-2xl font-semibold tracking-tight text-zinc-950 dark:text-zinc-50">
             Experience
           </h2>
-          <div className="mt-6 space-y-5">
-            <article className="rounded-2xl border border-zinc-900/10 bg-white/70 p-5 dark:border-zinc-700 dark:bg-zinc-900/40">
+          <div className="mt-6 space-y-0">
+            <article className="border-b border-zinc-900/10 py-5 last:border-b-0 dark:border-zinc-700">
               <div className="flex flex-wrap items-center justify-between gap-2">
                 <h3 className="text-lg font-semibold text-zinc-950 dark:text-zinc-50">
                   Software Dev Engineer · Amazon
                 </h3>
                 <p className="text-sm text-zinc-600 dark:text-zinc-400">
-                  Jul 2025 - Present · Hyderabad, India
+                  Jul '25 - Present
                 </p>
               </div>
               <p className="mt-3 text-sm leading-relaxed text-zinc-700 dark:text-zinc-300">
                 Building large-scale backend systems and reliability-focused
                 services for Alexa. Working on high-traffic infrastructure,
-                observability, and performance.
+                observability, and performance. Worked to drive emotionally
+                intelligent, context-aware AI responses for millions of users.
               </p>
             </article>
 
-            <article className="rounded-2xl border border-zinc-900/10 bg-white/70 p-5 dark:border-zinc-700 dark:bg-zinc-900/40">
+            <article className="border-b border-zinc-900/10 py-5 last:border-b-0 dark:border-zinc-700">
               <div className="flex flex-wrap items-center justify-between gap-2">
                 <h3 className="text-lg font-semibold text-zinc-950 dark:text-zinc-50">
                   Software Developer · Oncourse AI
                 </h3>
                 <p className="text-sm text-zinc-600 dark:text-zinc-400">
-                  Apr 2024 - Jul 2025 · Bengaluru / Remote
+                  Apr '24 - Jul '25
                 </p>
               </div>
               <p className="mt-3 text-sm leading-relaxed text-zinc-700 dark:text-zinc-300">
-                Progressed from intern to full-time developer. Shipped product
-                features using Next.js and TypeScript and contributed across
-                frontend and backend workflows.
+                Led the end-to-end development of a high-traffic mobile MVP,
+                contributing 80% of the codebase and securing 2,000+ sign-ups
+                within the first week. Engineered a custom spaced-repetition
+                algorithm that boosted user retention by 45% and established a
+                robust observability stack that cut critical bug resolution time
+                by half.
               </p>
             </article>
 
-            <article className="rounded-2xl border border-zinc-900/10 bg-white/70 p-5 dark:border-zinc-700 dark:bg-zinc-900/40">
+            <article className="border-b border-zinc-900/10 py-5 last:border-b-0 dark:border-zinc-700">
               <div className="flex flex-wrap items-center justify-between gap-2">
                 <h3 className="text-lg font-semibold text-zinc-950 dark:text-zinc-50">
                   Software Developer Intern · PyCray
                 </h3>
                 <p className="text-sm text-zinc-600 dark:text-zinc-400">
-                  Jun 2023 - Aug 2023 · Noida / Remote
+                  Jun '23 - Aug '23
                 </p>
               </div>
               <p className="mt-3 text-sm leading-relaxed text-zinc-700 dark:text-zinc-300">
-                Built and improved product modules with React Native and React,
-                with a focus on practical user-facing features and clean
-                component architecture.
+                Engineered a comprehensive ride-sharing ecosystem featuring a 20+ screen React Native mobile application and a centralized React.js admin dashboard. Optimized the core ride-search API, reducing search latency by 40% through efficient query handling and seamless integration of the Google Maps API and Cashfree payment gateway.
               </p>
             </article>
 
-            <article className="rounded-2xl border border-zinc-900/10 bg-white/70 p-5 dark:border-zinc-700 dark:bg-zinc-900/40">
+            <article className="py-5">
               <div className="flex flex-wrap items-center justify-between gap-2">
                 <h3 className="text-lg font-semibold text-zinc-950 dark:text-zinc-50">
-                  Research Intern (SERB) · NIT Goa
+                  Research Intern · SERB
                 </h3>
                 <p className="text-sm text-zinc-600 dark:text-zinc-400">
-                  Jun 2023 - Jul 2023 · Goa
+                  Jun '23 - Jul '23
                 </p>
               </div>
               <p className="mt-3 text-sm leading-relaxed text-zinc-700 dark:text-zinc-300">
-                Conducted research-driven development with Python and gprMax,
-                working on simulations and experimentation in an academic
-                setting.
+                Conducted advanced electromagnetic research under India’s premier research board, utilising Python and gprMax for subsurface object detection. Developed sophisticated visualization models for scattered fields, enhancing the accuracy of underground material identification and data interpretation.
               </p>
             </article>
           </div>
@@ -128,8 +128,8 @@ export default function Home() {
           <h2 className="text-2xl font-semibold tracking-tight text-zinc-950 dark:text-zinc-50">
             Projects
           </h2>
-          <div className="mt-6 grid gap-5 md:grid-cols-2">
-            <article className="rounded-2xl border border-zinc-900/10 bg-white/70 p-5 dark:border-zinc-700 dark:bg-zinc-900/40">
+          <div className="mt-6 space-y-0">
+            <article className="border-b border-zinc-900/10 py-5 dark:border-zinc-700">
               <h3 className="text-lg font-semibold text-zinc-950 dark:text-zinc-50">
                 Rejectedly-Yours
               </h3>
@@ -140,7 +140,7 @@ export default function Home() {
               </p>
             </article>
 
-            <article className="rounded-2xl border border-zinc-900/10 bg-white/70 p-5 dark:border-zinc-700 dark:bg-zinc-900/40">
+            <article className="py-5">
               <h3 className="text-lg font-semibold text-zinc-950 dark:text-zinc-50">
                 Schemer
               </h3>
@@ -153,28 +153,81 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="skills" className="py-2">
+        <section id="education" className="py-2">
           <h2 className="text-2xl font-semibold tracking-tight text-zinc-950 dark:text-zinc-50">
-            Core Focus
+            Education
           </h2>
-          <div className="mt-5 flex flex-wrap gap-2">
-            {[
-              "Distributed Systems",
-              "Backend Performance",
-              "Scalability",
-              "System Design",
-              "API Architecture",
-              "Frontend UX",
-              "Developer Experience",
-              "Cloud Infrastructure",
-            ].map((skill) => (
-              <span
-                key={skill}
-                className="rounded-full border border-zinc-900/15 bg-zinc-900 px-3 py-1.5 text-xs font-medium text-white dark:border-zinc-600 dark:bg-zinc-100 dark:text-zinc-900"
-              >
-                {skill}
-              </span>
-            ))}
+          <div className="mt-6 space-y-0">
+            <article className="border-b border-zinc-900/10 py-5 dark:border-zinc-700">
+              <div className="flex flex-wrap items-center justify-between gap-2">
+                <h3 className="text-lg font-semibold text-zinc-950 dark:text-zinc-50">
+                  National Institute of Technology Goa
+                </h3>
+                <p className="text-sm text-zinc-600 dark:text-zinc-400">
+                  Jul '20 - May '24
+                </p>
+              </div>
+              <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">
+                B.Tech · Electronics & Communication Engineering · Grade: 9.61
+              </p>
+            </article>
+
+            <article className="py-5">
+              <div className="flex flex-wrap items-center justify-between gap-2">
+                <h3 className="text-lg font-semibold text-zinc-950 dark:text-zinc-50">
+                  Kendriya Vidyalaya, Vayu Sena Nagar, Nagpur
+                </h3>
+                <p className="text-sm text-zinc-600 dark:text-zinc-400">
+                  Apr '19 - Mar '20
+                </p>
+              </div>
+              <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">
+                Science · Grade: 95.6
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section id="achievements" className="py-2">
+          <h2 className="text-2xl font-semibold tracking-tight text-zinc-950 dark:text-zinc-50">
+            Achievements
+          </h2>
+          <div className="mt-6 space-y-0">
+            <article className="border-b border-zinc-900/10 py-5 dark:border-zinc-700">
+              <div className="flex flex-wrap items-center justify-between gap-2">
+                <h3 className="text-lg font-semibold text-zinc-950 dark:text-zinc-50">
+                  GSoC Contributor · gprMax
+                </h3>
+                <p className="text-sm text-zinc-600 dark:text-zinc-400">
+                  Sep '25
+                </p>
+              </div>
+              <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">
+                Selected for Google Summer of Code and contributed to gprMax,
+                focusing on impactful open-source development. Engineered a
+                high-performance Apple Metal GPU backend, enabling complex
+                electromagnetic simulations to run natively on M-series chips.
+                Optimised thread utilisation and memory management to achieve 2×
+                faster runtimes compared to traditional OpenMP CPU
+                implementations.
+              </p>
+            </article>
+
+            <article className="py-5">
+              <div className="flex flex-wrap items-center justify-between gap-2">
+                <h3 className="text-lg font-semibold text-zinc-950 dark:text-zinc-50">
+                  Winner · Smart India Hackathon
+                </h3>
+                <p className="text-sm text-zinc-600 dark:text-zinc-400">
+                  Dec '23
+                </p>
+              </div>
+              <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">
+                Won SIH 2023 under the Ministry of Rural Development for
+                building a solution focused on FPO comparison, income tracking,
+                and farmer support workflows.
+              </p>
+            </article>
           </div>
         </section>
 
@@ -183,33 +236,10 @@ export default function Home() {
             Contact
           </h2>
           <p className="mt-3 max-w-2xl text-pretty text-lg leading-relaxed text-zinc-700 dark:text-zinc-300">
-            Open to impactful backend and full-stack opportunities where I can
-            build reliable systems, ship fast, and solve hard product problems.
+            Open to impactful opportunities where I can build reliable systems,
+            ship fast, and solve hard product problems. If you made it this far,
+            the bottom bar has exactly the buttons you are looking for.
           </p>
-          <div className="mt-5 flex flex-wrap gap-3">
-            <a
-              href="mailto:hello@example.com"
-              className="rounded-xl bg-zinc-950 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-zinc-800 dark:bg-zinc-100 dark:text-zinc-900 dark:hover:bg-zinc-200"
-            >
-              Email Me
-            </a>
-            <a
-              href="https://github.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="rounded-xl border border-zinc-900/20 bg-white px-5 py-2.5 text-sm font-medium text-zinc-800 transition hover:bg-zinc-100 dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-100 dark:hover:bg-zinc-800"
-            >
-              GitHub
-            </a>
-            <a
-              href="https://linkedin.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="rounded-xl border border-zinc-900/20 bg-white px-5 py-2.5 text-sm font-medium text-zinc-800 transition hover:bg-zinc-100 dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-100 dark:hover:bg-zinc-800"
-            >
-              LinkedIn
-            </a>
-          </div>
         </section>
       </main>
       <BottomTab />
