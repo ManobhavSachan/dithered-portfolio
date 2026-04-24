@@ -11,6 +11,8 @@ import {
   createContext,
   useContext,
   useRef,
+  useState,
+  useEffect,
   type ComponentPropsWithoutRef,
   type ReactNode,
 } from 'react';
@@ -55,12 +57,19 @@ export const Dock = ({
   ...props
 }: DockProps) => {
   const mouseX = useMotionValue(Infinity);
+  const [isTouchDevice, setIsTouchDevice] = useState(false);
+
+  useEffect(() => {
+    // Check if device supports hover (non-touch devices)
+    const isTouch = window.matchMedia('(hover: none)').matches;
+    setIsTouchDevice(isTouch);
+  }, []);
 
   return (
-    <DockContext.Provider value={{ mouseX, magnification, distance }}>
+    <DockContext.Provider value={{ mouseX, magnification: isTouchDevice ? 0 : magnification, distance }}>
       <motion.div
-        onMouseMove={(e) => mouseX.set(e.pageX)}
-        onMouseLeave={() => mouseX.set(Infinity)}
+        onMouseMove={(e) => !isTouchDevice && mouseX.set(e.pageX)}
+        onMouseLeave={() => !isTouchDevice && mouseX.set(Infinity)}
         className={joinClass(
           'mx-auto flex h-full w-max items-end justify-center overflow-visible rounded-full border',
           className
