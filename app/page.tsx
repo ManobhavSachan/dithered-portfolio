@@ -155,8 +155,8 @@ function AboutSection() {
         About Me
       </h2>
       <p className="mt-5 text-pretty text-lg leading-relaxed text-zinc-700 dark:text-zinc-300">
-        Currently at Amazon, teaching Alexa how to be more human. I specialize
-        in scaling backend systems to survive massive traffic spikes and
+        Currently at Amazon, teaching Alexa how to be more human. I specialise
+        in scaling backend systems to survive massive traffic spikes, injecting emotional intelligence into AI and
         building interfaces so seamless that users forget they&apos;re staring
         at glowing rectangles all day.
       </p>

@@ -943,6 +943,13 @@ export default function DitheredLogo({
       );
     };
 
+    // trigger once immediately on mount, then every 5s
+    try {
+      triggerIntroClick();
+    } catch (e) {
+      // ignore
+    }
+
     const timer = window.setInterval(triggerIntroClick, 5000);
 
     return () => window.clearInterval(timer);
